@@ -18,5 +18,19 @@
     <ClCompile Include="Multivariate linear functions.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="hypothesis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\thirdparty\file_manager\FileManager\file_manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hypothesis.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\thirdparty\file_manager\FileManager\file_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

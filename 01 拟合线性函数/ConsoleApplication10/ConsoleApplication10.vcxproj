@@ -104,7 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../file_manager/FileManager/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../thirdparty/file_manager/FileManager/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,7 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\file_manager\FileManager\file_manager.cpp" />
+    <ClCompile Include="..\..\thirdparty\file_manager\FileManager\file_manager.cpp" />
     <ClCompile Include="ConsoleApplication10.cpp" />
     <ClCompile Include="hypothesis.cpp" />
   </ItemGroup>

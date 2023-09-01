@@ -2,10 +2,10 @@
 //
 
 #include <iostream>
-
+#include "hypothesis.h"
 int main()
 {
-    std::cout << "Hello World!\n";
+    hypothesis h("../data-set/pizza_3_vars.txt",3);
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

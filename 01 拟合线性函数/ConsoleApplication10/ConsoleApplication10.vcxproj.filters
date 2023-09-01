@@ -18,10 +18,10 @@
     <ClCompile Include="ConsoleApplication10.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\file_manager\FileManager\file_manager.cpp">
+    <ClCompile Include="hypothesis.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="hypothesis.cpp">
+    <ClCompile Include="..\..\thirdparty\file_manager\FileManager\file_manager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
