@@ -1,0 +1,3 @@
+[submodule "01 拟合线性函数/file_manager"]
+	path = 01 拟合线性函数/file_manager
+	url = git@github.com:life-studied/file_manager.git
