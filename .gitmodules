@@ -1,0 +1,3 @@
+[submodule "thirdparty/file_manager"]
+	path = thirdparty/file_manager
+	url = git@github.com:life-studied/file_manager.git
