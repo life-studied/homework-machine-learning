@@ -1,6 +1,3 @@
 [submodule "thirdparty/file_manager"]
 	path = thirdparty/file_manager
 	url = git@github.com:life-studied/file_manager.git
-[submodule "thirdparty/python-tools"]
-	path = thirdparty/python-tools
-	url = git@github.com:life-studied/python-tools.git
