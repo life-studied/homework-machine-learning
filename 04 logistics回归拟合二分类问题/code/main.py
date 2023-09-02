@@ -1,9 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import re
 import sys
-sys.path.append('../../thirdparty/python-tools/01 提取字符串中的所有数字')
-import extract_num as exnum  # 导入目标模块
+
+sys.path.append('../../thirdparty/python-tools/ExtractNumbers')
+import extract_num as exn
 
 
 class LogisticsRegression:
@@ -21,4 +21,4 @@ class LogisticsRegression:
 
 
 if __name__ == '__main__':
-    print(exnum.handing("h31100 23 cqt444.4 rabbit 11 2 dog 555.5"))
+    print(exn.extract_number_from_str("h31100 23 cqt444.4 rabbit 11 2 dog 555.5"))
