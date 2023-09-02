@@ -21,4 +21,4 @@ class LogisticsRegression:
 
 
 if __name__ == '__main__':
-    print(exn.extract_number_from_str("h31100 23 cqt444.4 rabbit 11 2 dog 555.5"))
+    print(exn.read_xy_data_set_str("../data-set/"))
