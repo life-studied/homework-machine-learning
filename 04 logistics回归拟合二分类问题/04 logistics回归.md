@@ -17,8 +17,24 @@
 * $h_\theta(x)\rightarrow0,y=0,Cost\rightarrow0$
 * $h_\theta(x)\rightarrow1,y=0,Cost\rightarrow\infty$
 
-综上，$J(\theta)=\frac{1}{m}\sum_{i=1}^{m}Cost(h_\theta(x^{(i)}),y^{(i)})=\frac{1}{m}[\sum_{i=1}^{m}-y log(h_\theta(x))-(1-y)log(1-h_\theta(x))]$
+综上，$J(\theta)=\frac{1}{m}\sum_{i=1}^{m}Cost(h_\theta(x^{(i)}),y^{(i)})=\frac{1}{m}[\sum_{i=1}^{m}-y^{(i)} log(h_\theta(x^{(i)}))-(1-y^{(i)})log(1-h_\theta(x^{(i)}))]$
 
 ## 梯度下降
 
 ​	$\theta_j = \theta_j - \alpha\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})x_j^{(i)}$
+
+## 矩阵格式计算推导（线性g(x））
+
+$x=\begin{bmatrix}x^{(1)}\\x^{(2)}\\ \vdots \\ x^{(m)}\end{bmatrix}$，$x^{(i)}$为样本行向量$\begin{bmatrix}x_1^{(i)}&x_2^{(i)}&\cdots&x_n^{(i)}\end{bmatrix}$。$x_1^{(i)} = 1$。
+
+$y=\begin{bmatrix}y^{(1)}\\y^{(2)}\\ \vdots \\ y^{(m)}\end{bmatrix}$
+
+$\theta = \begin{bmatrix}\theta_1\\\theta_2\\ \vdots \\ \theta_n\end{bmatrix}$
+
+$g(x) = x*\theta = \begin{bmatrix}g(x)^{(1)}\\g(x)^{(2)}\\\vdots\\g(x)^{(m)}\end{bmatrix}$
+
+$h(x) = \frac{1}{1+e^{-g(x)}} = \begin{bmatrix}\frac{1}{1+e^{-g(x)^{(1)}}} \\ \frac{1}{1+e^{-g(x)^{(2)}}} \\ \vdots \\ \frac{1}{1+e^{-g(x)^{(m)}}}\end{bmatrix}$
+
+$Cost(h(x),y) = -\frac{1}{m}[y^T*log(h(x))+(\begin{bmatrix}1\\1\\\vdots\\1\end{bmatrix}-y)^T*log(\begin{bmatrix}1\\1\\\vdots\\1\end{bmatrix}-h(x))]$
+
+梯度下降中每次迭代的新的$\theta_{i+1}=\theta_i - \alpha*((h(x)-y)^T*x)^T$
