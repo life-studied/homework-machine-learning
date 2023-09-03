@@ -25,7 +25,7 @@
 
 ## 矩阵格式计算推导（线性g(x））
 
-$x=\begin{bmatrix}x^{(1)}\\x^{(2)}\\ \vdots \\ x^{(m)}\end{bmatrix}$，$x^{(i)}$为样本行向量$\begin{bmatrix}x_1^{(i)}&x_2^{(i)}&\cdots&x_n^{(i)}\end{bmatrix}$。$x_1^{(i)} = 1$。
+$x=\begin{bmatrix}x^{(1)}\\x^{(2)}\\ \vdots \\ x^{(m)}\end{bmatrix}$，其中$x^{(i)}$为样本行向量$\begin{bmatrix}x_1^{(i)}&x_2^{(i)}&\cdots&x_n^{(i)}\end{bmatrix}$。$x_1^{(i)} = 1$。
 
 $y=\begin{bmatrix}y^{(1)}\\y^{(2)}\\ \vdots \\ y^{(m)}\end{bmatrix}$
 
