@@ -20,7 +20,7 @@ class MultipleLogisticsRegression:
         self.y_key = []
         for key in self.sample_dict.keys():
             x_list = self.sample_dict[key]
-            x_list.append([item for item in self.x_list if item not in self.sample_dict[key]])
+            x_list.extend([item for item in self.x_list if item not in self.sample_dict[key]])
             y_list = [1] * len(self.sample_dict[key]) + [0] * (len(self.x_list) - len(self.sample_dict[key]))
             self.logistic_regression_s.append(LogisticsRegression(x_list, y_list))
             self.y_key.append(key)
